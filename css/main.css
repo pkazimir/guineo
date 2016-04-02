@@ -1,0 +1,34 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.navbar-nav li a:hover {
+    color: #FFE135 !important;
+}
+
+.active-color a {
+    color: #FFE135 !important;
+}
+
+.navbar-brand {
+    color: #FFE135 !important;
+}
+
+.navbar-right li a:hover {
+    color: #9d9d9d !important;
+}
