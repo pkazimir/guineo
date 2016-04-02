@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.42)
 # Database: guineo
-# Generation Time: 2016-04-02 22:42:56 +0000
+# Generation Time: 2016-04-02 22:57:50 +0000
 # ************************************************************
 
 
@@ -29,6 +29,7 @@ CREATE TABLE `factura` (
   `fact_id` int(11) NOT NULL,
   `company_name` varchar(20) NOT NULL,
   `price` float NOT NULL,
+  `tip` float DEFAULT NULL,
   `card` int(11) NOT NULL,
   `concept` text,
   PRIMARY KEY (`fact_id`)
@@ -37,10 +38,10 @@ CREATE TABLE `factura` (
 LOCK TABLES `factura` WRITE;
 /*!40000 ALTER TABLE `factura` DISABLE KEYS */;
 
-INSERT INTO `factura` (`fact_id`, `company_name`, `price`, `card`, `concept`)
+INSERT INTO `factura` (`fact_id`, `company_name`, `price`, `tip`, `card`, `concept`)
 VALUES
-	(1,'La Sirena',140.4,3456,'Lunch before carnival training'),
-	(2,'Tipico Bonao',450.5,3456,'Cena despues del entrenamiento de carnival');
+	(1,'La Sirena',140.4,50,3456,'Lunch before carnival training'),
+	(2,'Tipico Bonao',450.5,0,3456,'Cena despues del entrenamiento de carnival');
 
 /*!40000 ALTER TABLE `factura` ENABLE KEYS */;
 UNLOCK TABLES;
