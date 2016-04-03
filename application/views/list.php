@@ -1,12 +1,13 @@
 <table class="table table-striped" align="center">
 <thead class="thead">
 <tr>
-    <th>fact_id</td>
-    <th>company_name</td>
-    <th>price</td>
-    <th class=" hidden-xs hidden-sm">tip</td>
-    <th class=" hidden-xs hidden-sm">card</td>
-    <th>concept</td>
+    <th>ID</td>
+    <th>Date</td>
+    <th>Company</td>
+    <th>Price</td>
+    <th class=" hidden-xs hidden-sm">Tips</td>
+    <th class=" hidden-xs hidden-sm">Card</td>
+    <th>Comment</td>
     <th>&nbsp;</td>
 </tr>
 </thead>
@@ -15,12 +16,13 @@
     
     <tr>
         <td><?php echo $row['fact_id']; ?></td>
-        <td><?php echo $row['company_name']; ?></td>
+        <td><?php echo $row['date']; ?></td>
+        <td><?php echo $row['company']; ?></td>
         <td><?php echo $row['price']; ?></td>
         <td class="hidden-xs hidden-sm"><?php echo $row['tip']; ?></td>
         <td class="hidden-xs hidden-sm"><?php echo $row['card']; ?></td>
-        <td><?php echo $row['concept']; ?></td>
-        <td><span class="glyphicon glyphicon-zoom-in"></span></td>
+        <td><?php echo $row['comment']; ?></td>
+        <td><a href="uploads/<?php echo $row['fact_id']; ?>.jpg" class="btn btn-sm btn-success"><span class="glyphicon glyphicon-camera"></span></a></td>
     </tr>
 
 <?php endforeach; ?>
