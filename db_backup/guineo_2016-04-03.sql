@@ -1,13 +1,13 @@
 # ************************************************************
 # Sequel Pro SQL dump
-# Version 4529
+# Version 4541
 #
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.5.42)
 # Database: guineo
-# Generation Time: 2016-04-02 22:57:50 +0000
+# Generation Time: 2016-04-04 03:19:49 +0000
 # ************************************************************
 
 
@@ -26,25 +26,16 @@
 DROP TABLE IF EXISTS `factura`;
 
 CREATE TABLE `factura` (
-  `fact_id` int(11) NOT NULL,
-  `company_name` varchar(20) NOT NULL,
+  `fact_id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` date DEFAULT NULL,
+  `company` varchar(20) NOT NULL DEFAULT '',
   `price` float NOT NULL,
   `tip` float DEFAULT NULL,
   `card` int(11) NOT NULL,
-  `concept` text,
+  `comment` text,
   PRIMARY KEY (`fact_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-LOCK TABLES `factura` WRITE;
-/*!40000 ALTER TABLE `factura` DISABLE KEYS */;
-
-INSERT INTO `factura` (`fact_id`, `company_name`, `price`, `tip`, `card`, `concept`)
-VALUES
-	(1,'La Sirena',140.4,50,3456,'Lunch before carnival training'),
-	(2,'Tipico Bonao',450.5,0,3456,'Cena despues del entrenamiento de carnival');
-
-/*!40000 ALTER TABLE `factura` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 
