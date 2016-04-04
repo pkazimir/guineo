@@ -30,7 +30,7 @@ class Main extends CI_Controller {
     function upload($id) {
         
         $config['upload_path'] = './uploads/';
-		$config['allowed_types'] = 'jpeg|jpg|png|pdf';
+		$config['allowed_types'] = 'jpeg|jpg|pdf';
 		$config['max_size']	= '0';
 		$config['max_width']  = '0';
 		$config['max_height']  = '0';

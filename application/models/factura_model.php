@@ -25,7 +25,7 @@ class Factura_model extends CI_Model {
            'tip' => $data['itip'],
            'card' => $data['icard'],
            'comment' => $data['icomment'],
-            'owner' => 'pkazimir'
+            'owner' => 1
         );
 
         $this->db->insert('factura', $data);

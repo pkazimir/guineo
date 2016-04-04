@@ -12,7 +12,6 @@ RewriteCond $1 ^(application|system|private|logs)
 RewriteRule ^(.*)$ index.php/access_denied/$1 [PT,L]
 
 # Stop if it's a request to an existing file.
-
 RewriteCond %{REQUEST_FILENAME} -f [NC,OR]
 RewriteCond %{REQUEST_FILENAME} -d [NC]
 
