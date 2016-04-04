@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2016 at 05:16 PM
+-- Generation Time: Apr 04, 2016 at 11:16 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -37,14 +37,16 @@ CREATE TABLE IF NOT EXISTS `factura` (
   `comment` text,
   `owner` varchar(20) NOT NULL,
   PRIMARY KEY (`fact_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `factura`
 --
 
 INSERT INTO `factura` (`fact_id`, `date`, `company`, `price`, `tip`, `card`, `comment`, `owner`) VALUES
-(4, '1233-03-01', '333', 33, 333, 2136, '33', 'pkazimir');
+(4, '1233-03-01', '333', 33, 333, 2136, '33', 'pkazimir'),
+(5, '2016-03-06', 'Rest. Mathilda', 1920, 100, 2136, 'Cena despues de cata Inprotec (turismo)', 'pkazimir'),
+(6, '2016-04-04', 'Colmado', 70, 0, 9674, 'Compra de hielo reunion Monin (efectivo)', 'pkazimir');
 
 -- --------------------------------------------------------
 
