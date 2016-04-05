@@ -32,6 +32,17 @@ class Factura_model extends CI_Model {
         
         return $this->db->insert_id(); 
     }
+    
+    function setExt($id, $ext)
+    {
+        $data = array(
+               'ext' => $ext
+            );
+
+        $this->db->where('fact_id', $id);
+        
+        return $this->db->update('factura', $data);
+    }
 }
 
 ?>

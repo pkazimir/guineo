@@ -22,7 +22,7 @@
         <td class="hidden-xs hidden-sm"><?php echo $row['tip']; ?></td>
         <td class="hidden-xs hidden-sm"><?php echo $row['card']; ?></td>
         <td><?php echo $row['comment']; ?></td>
-        <td><a href="uploads/<?php echo $row['fact_id']; ?>.pdf" class="btn btn-sm btn-success" target="_blank"><span class="glyphicon glyphicon-camera"></span></a></td>
+        <td><a href="uploads/<?php echo $row['fact_id']; ?>.<?php echo $row['ext']; ?>" class="btn btn-sm btn-success" target="_blank"><span class="glyphicon glyphicon-camera"></span></a></td>
     </tr>
 
 <?php endforeach; ?>

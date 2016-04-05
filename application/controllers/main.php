@@ -19,8 +19,16 @@ class Main extends CI_Controller {
         $data['screen'] = 'add';
         
         if ($postData = $this->input->post('icomment'))
-            if ($this->upload($this->Factura_model->create_invoice($this->input->post())))
-                $data['insertStatus'] = 'success';
+            if ($factId = $this->Factura_model->create_invoice($this->input->post()))
+            {
+                $doUpload = $this->upload($factId);
+                $setExt = $this->Factura_model->setExt($factId, $this->upload->data('image_type'));
+                
+                if ($doUpload && $setExt)
+                    $data['insertStatus'] = 'success';
+                else
+                    $data['insertStatus'] = 'failed';
+            }
             else
                 $data['insertStatus'] = 'failed';
         
@@ -30,7 +38,7 @@ class Main extends CI_Controller {
     function upload($id) {
         
         $config['upload_path'] = './uploads/';
-		$config['allowed_types'] = 'jpeg|jpg|pdf';
+		$config['allowed_types'] = 'jpeg|jpg|png|pdf';
 		$config['max_size']	= '0';
 		$config['max_width']  = '0';
 		$config['max_height']  = '0';
