@@ -18,8 +18,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-            <li <?php if ($screen=='list') echo 'class="active active-color"'; ?>><a href="/guineo"><span class="glyphicon glyphicon-th-list"></span> List</a></li>
-            <li <?php if ($screen=='add') echo 'class="active active-color"'; ?>><a href="/guineo/add"><span class="glyphicon glyphicon-plus"></span> Add</a></li>
+            <li <?php if ($screen=='list') echo 'class="active active-color"'; ?>><a href="/guineo"><span class="glyphicon glyphicon-th-list"></span> Lista</a></li>
+            <li <?php if ($screen=='add') echo 'class="active active-color"'; ?>><a href="/guineo/add"><span class="glyphicon glyphicon-plus"></span> Nueva</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
           <li><a><span class="glyphicon glyphicon-user"></span> Pavol Kazimir</a></li>

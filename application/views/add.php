@@ -28,7 +28,7 @@ if (isset($insertStatus))
 <div class="col-sm-6 form-padding">
     
 <div class="form-group">
-    <label for="usr">Date:</label>
+    <label for="usr">Fecha:</label>
     <div class='input-group date' id='datetimepicker1'>
         <span class="input-group-addon">
             <span class="glyphicon glyphicon-calendar"></span>
@@ -49,13 +49,13 @@ if (isset($insertStatus))
 
     
 <div class="form-group">
-    <label for="usr">Company:</label>
+    <label for="usr">Campañía:</label>
     <input type="text" class="input form-control" name="icompany" required>
     <div class="help-block with-errors"></div>
 </div>
     
 <div class="form-group">
-    <label for="usr">Price:</label>
+    <label for="usr">Precio:</label>
     <span class="input-group">
     <span class="input-group-addon">RD$</span>
     <input class="input form-control" name="iprice" type="number" step="0.00001" min="0.1" pattern="^\d*\.?\d*$" required>
@@ -64,7 +64,7 @@ if (isset($insertStatus))
 </div>
     
 <div class="form-group">
-    <label for="usr">Tip:</label>
+    <label for="usr">Propina:</label>
     <span class="input-group">
     <span class="input-group-addon">RD$</span>
     <input type="number" class="input form-control" name="itip" step="0.00001" min="0.1">
@@ -75,7 +75,7 @@ if (isset($insertStatus))
 <div class="col-sm-6 form-padding">
     
 <div class="form-group">
-  <label for="sel1">Card:</label>
+  <label for="sel1">Forma de Pago:</label>
   <select class="form-control" id="sel1" name="icard">
     <option value="2136">2136 - Business</option>
     <option value="9674">9674 - Personal</option>
@@ -83,19 +83,19 @@ if (isset($insertStatus))
 </div>
     
 <div class="form-group">
-    <label for="comment">Comment:</label>
+    <label for="comment">Concepto:</label>
     <textarea class="form-control" rows="5" id="comment" name="icomment" required></textarea>
     <div class="help-block with-errors"></div>
 </div>
 
 <div class="form-group">
     <span>
-    <label for="sel1">Invoice:</label>
+    <label for="sel1">Factura:</label>
     </span>
     <input class="form-control" type="file" name="userfile">
 </div>
     
-<button type="submit" class="btn btn-default">Submit</button>
+<button type="submit" class="btn btn-default">Guardar</button>
     
 </div>
 

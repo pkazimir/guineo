@@ -2,12 +2,12 @@
 <thead class="thead">
 <tr>
     <th>ID</td>
-    <th>Date</td>
-    <th>Company</td>
-    <th>Price</td>
-    <th class=" hidden-xs hidden-sm">Tips</td>
-    <th class=" hidden-xs hidden-sm">Card</td>
-    <th>Comment</td>
+    <th>Fecha</td>
+    <th>Compañía</td>
+    <th>Precio</td>
+    <th class=" hidden-xs hidden-sm">Propina</td>
+    <th class=" hidden-xs hidden-sm">Forma de Pago</td>
+    <th>Concepto</td>
     <th>&nbsp;</td>
 </tr>
 </thead>
