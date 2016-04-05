@@ -23,18 +23,19 @@ if (isset($insertStatus))
 
 <div class="form-group add-form center-block">    
     
-<form action="" class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
+<form action="" class="form-horizontal" role="form" method="post" enctype="multipart/form-data" data-toggle="validator">
 
 <div class="col-sm-6 form-padding">
     
 <div class="form-group">
     <label for="usr">Date:</label>
     <div class='input-group date' id='datetimepicker1'>
-        <input type='text' class="form-control" name="idate">
         <span class="input-group-addon">
             <span class="glyphicon glyphicon-calendar"></span>
         </span>
+        <input type='text' class="form-control" name="idate" pattern="^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$" placeholder="YYYY-MM-DD" required>
     </div>
+    <div class="help-block with-errors"></div>
 </div>
 
 <script type="text/javascript">
@@ -49,22 +50,24 @@ if (isset($insertStatus))
     
 <div class="form-group">
     <label for="usr">Company:</label>
-    <input type="text" class="input form-control" name="icompany">
+    <input type="text" class="input form-control" name="icompany" required>
+    <div class="help-block with-errors"></div>
 </div>
     
 <div class="form-group">
     <label for="usr">Price:</label>
     <span class="input-group">
-    <input type="text" class="input form-control" name="iprice">
     <span class="input-group-addon">RD$</span>
-    </span>    
+    <input class="input form-control" name="iprice" type="number" step="0.00001" min="0.1" pattern="^\d*\.?\d*$" required>
+    </span>
+    <div class="help-block with-errors"></div>
 </div>
     
 <div class="form-group">
     <label for="usr">Tip:</label>
     <span class="input-group">
-    <input type="text" class="input form-control" name="itip">
     <span class="input-group-addon">RD$</span>
+    <input type="number" class="input form-control" name="itip" step="0.00001" min="0.1">
     </span>
 </div>
     
@@ -80,8 +83,9 @@ if (isset($insertStatus))
 </div>
     
 <div class="form-group">
-  <label for="comment">Comment:</label>
-  <textarea class="form-control" rows="5" id="comment" name="icomment"></textarea>
+    <label for="comment">Comment:</label>
+    <textarea class="form-control" rows="5" id="comment" name="icomment" required></textarea>
+    <div class="help-block with-errors"></div>
 </div>
 
 <div class="form-group">

@@ -26,14 +26,17 @@
     <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
 
-<!-- stite-css -->
+<!-- site-css -->
 <link rel="stylesheet" href="css/main.css" type="text/css">
 
 <!-- jQuery -->
     <script src="js/jquery-2.2.2.min.js"></script>
 
-<!-- moment.js -->
+<!-- moment.js DATE/TIME -->
     <script src="js/moment.js"></script>
+
+<!-- validator.js FORM VALIDATION -->
+    <script src="js/validator.min.js"></script>
 
 <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
