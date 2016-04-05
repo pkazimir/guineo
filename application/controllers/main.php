@@ -52,6 +52,13 @@ class Main extends CI_Controller {
 			return false;
     }
     
+    function inbox() {
+        
+        $data['screen'] = 'inbox';
+        
+        $this->load->view('template', $data);
+    }
+    
     private function header() {
         $this->load->view('header');
     }
