@@ -20,7 +20,9 @@ class User_model extends CI_Model {
         
         $result = $this->db->get();
         
-        return $result->row();
+        $row = $result->row();
+        
+        return $row->user_id;
     }
 }
 

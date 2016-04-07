@@ -17,15 +17,16 @@ class Factura_model extends CI_Model {
     
     function create_invoice($data)
     {
+        $this->load->model('User_model');
+        
         $data = array(
-           'fact_id' => '',
            'date' => $data['idate'],
            'company' => $data['icompany'],
            'price' => $data['iprice'],
            'tip' => $data['itip'],
            'card' => $data['icard'],
            'comment' => $data['icomment'],
-            'owner' => $this->getUserId($data['iowner']),
+            'owner' => $this->User_model->getUserId($data['iowner']),
             'created_date' => date("Y-m-d"),
            'created_by' => $this->userid
         );

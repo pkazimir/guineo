@@ -47,7 +47,6 @@ if (isset($insertStatus))
     });
 </script>
 
-    
 <div class="form-group">
     <label for="usr">Campañía:</label>
     <input type="text" class="input form-control" name="icompany" required>
@@ -97,7 +96,10 @@ if (isset($insertStatus))
 
 <div class="form-group">
     <label for="usr">Dueño de la factura:</label>
+    <span class="input-group">
     <input type="text" class="input form-control" name="iowner" placeholder="pkazimir" required>
+    <span class="input-group-addon">@brugal.com.do</span>
+    </span>
     <div class="help-block with-errors"></div>
 </div>
     
@@ -105,6 +107,6 @@ if (isset($insertStatus))
     
 </div>
 
-    </form> 
+</form> 
     
 </div>
