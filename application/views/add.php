@@ -94,6 +94,12 @@ if (isset($insertStatus))
     </span>
     <input class="form-control" type="file" name="userfile">
 </div>
+
+<div class="form-group">
+    <label for="usr">Dueño de la factura:</label>
+    <input type="text" class="input form-control" name="iowner" placeholder="pkazimir" required>
+    <div class="help-block with-errors"></div>
+</div>
     
 <button type="submit" class="btn btn-default">Guardar</button>
     

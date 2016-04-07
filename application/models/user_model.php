@@ -12,6 +12,16 @@ class User_model extends CI_Model {
         
         return $result->row();
     }
+    
+    function getUserId($username) {
+        
+        $this->db->like('username', $username);
+        $this->db->from('user');
+        
+        $result = $this->db->get();
+        
+        return $result->row();
+    }
 }
 
 ?>

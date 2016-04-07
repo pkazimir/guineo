@@ -2,12 +2,15 @@
 
 class Entrada extends MY_Controller {
     
-  function index() {
+    function index() {
+        
+        $this->load->model('Factura_model');
+        
+        $data['fact_list'] = $this->Factura_model->get_facturas();
+        $data['screen'] = 'inbox';
       
-      $data['screen'] = 'inbox';
-      
-      $this->load->view("template", $data);
-  }  
+        $this->load->view("template", $data);
+    }  
 }
 
 ?>
