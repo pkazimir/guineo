@@ -30,7 +30,17 @@ class Perfil extends MY_Controller {
     }
     
     public function borrarTarjeta(){
-        return true;
+        
+        $this->load->model("card_model");
+        
+        $cardInfo = array(
+                        "user_id" => $this->userid,
+                        "card_num" => $this->input->post('icardnumber'));
+        
+        if ($this->card_model->delCard($cardInfo))
+            return true;
+        else
+            return false;
     }
 }
 

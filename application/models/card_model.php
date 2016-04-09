@@ -21,6 +21,11 @@ class Card_model extends CI_Model {
         if ($this->db->insert('card', $data))
             return true;
     }
+    
+    function delCard($cardInfo) {
+        
+        $query = $this->db->query('DELETE FROM card WHERE user_id = '.$cardInfo['user_id'].' AND number = '.$cardInfo['card_num']);
+    }
 }
 
 ?>
