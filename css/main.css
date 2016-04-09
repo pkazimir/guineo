@@ -59,3 +59,17 @@ body {
 input[type=number] {-moz-appearance: textfield;}
 input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none;}
 input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none;}
+
+/**
+*
+*  ADD Screen
+*
+***/
+
+.newCardRecord {
+    display: none;
+}
+
+.fixW {
+    width: 100px;
+}
