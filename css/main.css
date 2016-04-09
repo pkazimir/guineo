@@ -12,8 +12,13 @@
           box-sizing: border-box;
 }
 
+.logo-img {
+    position: relative;
+    top: -15px;
+}
+
 body {
-    padding-top: 70px;
+    margin-top: 70px !important;
 }
 
 .navbar {
@@ -35,10 +40,6 @@ body {
 
 .navbar-brand {
     color: #FFE135 !important;
-}
-
-.navbar-right li a:hover {
-    color: #9d9d9d !important;
 }
 
 /**
