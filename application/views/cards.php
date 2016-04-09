@@ -54,7 +54,7 @@ $(document).ready(function() {
         $.ajax({
             type: 'POST',
             data: {icardnumber: card_num},
-            url: '<?php echo base_url('perfil/borrarTarjeta'); ?>',
+            url: '<?php echo base_url('tarjetas/borrarTarjeta'); ?>',
             success: function(json){
                 $(element).closest('tr').fadeOut(300, function() {
                     $(element).closest('tr').remove();
@@ -91,7 +91,7 @@ $(document).ready(function() {
         $.ajax({
             type: 'POST',
             data: {icardnumber: card_num, icardtype: card_type},
-            url: '<?php echo base_url('perfil/anadirTarjeta'); ?>',
+            url: '<?php echo base_url('tarjetas/anadirTarjeta'); ?>',
             context: this,
             success: function(json){
                 $(element).closest("tr").find('#icardnumber').parent().text(card_num);

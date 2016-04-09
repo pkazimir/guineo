@@ -1,6 +1,6 @@
 <?php
 
-class Perfil extends MY_Controller {
+class Tarjetas extends MY_Controller {
     
   function index() {
       
@@ -9,7 +9,7 @@ class Perfil extends MY_Controller {
       
       $data['card_type'] = $this->payment_model->getCardTypes();
       $data['card'] = $this->card_model->getCards($this->userid);
-      $data['screen'] = 'profile';
+      $data['screen'] = 'cards';
         
       $this->load->view('template', $data);
   }
