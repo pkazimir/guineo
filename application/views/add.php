@@ -57,7 +57,7 @@ if (isset($insertStatus))
     <label for="usr">Precio:</label>
     <span class="input-group">
     <span class="input-group-addon">RD$</span>
-    <input class="input form-control" name="iprice" type="number" step="0.00001" min="0.1" pattern="^\d*\.?\d*$" required>
+    <input class="input form-control" name="iprice" type="number" pattern="^\d*\.?\d*$" required>
     </span>
     <div class="help-block with-errors"></div>
 </div>
@@ -66,7 +66,7 @@ if (isset($insertStatus))
     <label for="usr">Propina:</label>
     <span class="input-group">
     <span class="input-group-addon">RD$</span>
-    <input type="number" class="input form-control" name="itip" step="0.00001" min="0.1">
+    <input type="number" class="input form-control" name="itip">
     </span>
 </div>
     
